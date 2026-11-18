@@ -1,0 +1,297 @@
+@media(max-width:900px) {
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding-top: 75px
+    }
+
+    .hero-copy {
+        max-width: 650px
+    }
+
+    .hero-visual {
+        max-width: 650px;
+        width: 100%;
+        margin: auto;
+        padding: 25px 15px 35px
+    }
+
+    .hero-scroll {
+        display: none
+    }
+
+    .section-grid {
+        grid-template-columns: 1fr;
+        gap: 20px
+    }
+
+    .section-intro {
+        max-width: 600px
+    }
+
+    .provider-list {
+        gap: 20px
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .feature-large {
+        grid-column: span 2
+    }
+
+    .cta-card {
+        padding: 55px 40px
+    }
+}
+
+@media(max-width:650px) {
+
+    .section-wrap,
+    .topbar {
+        width: calc(100% - 36px)
+    }
+
+    .topbar {
+        height: 70px
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        margin-right: 16px
+    }
+
+    .nav-cta {
+        padding: 9px 11px;
+        font-size: 10px
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        top: 69px;
+        left: 0;
+        right: 0;
+        background: #101812;
+        padding: 22px 25px;
+        border-bottom: 1px solid var(--line);
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .nav-links.open {
+        display: flex
+    }
+
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 65px;
+        min-height: auto
+    }
+
+    h1 {
+        font-size: 54px;
+        letter-spacing: -3.8px
+    }
+
+    .hero-lede {
+        font-size: 13px
+    }
+
+    .hero-note {
+        flex-wrap: wrap
+    }
+
+    .hero-visual {
+        padding: 25px 4px 35px
+    }
+
+    .dashboard-window {
+        padding: 0 10px 12px;
+        transform: none
+    }
+
+    .window-top {
+        height: 35px
+    }
+
+    .dash-heading {
+        padding: 14px 0 12px
+    }
+
+    .dash-heading h3 {
+        font-size: 12px
+    }
+
+    .period {
+        font-size: 7px;
+        padding: 6px
+    }
+
+    .metric {
+        padding: 9px 7px
+    }
+
+    .metric strong {
+        font-size: 16px
+    }
+
+    .metric small {
+        font-size: 6px
+    }
+
+    .metric em {
+        font-size: 7px
+    }
+
+    .chart-panel {
+        padding: 10px 8px 7px
+    }
+
+    .chart {
+        height: 95px
+    }
+
+    .float-chip {
+        padding: 8px
+    }
+
+    .float-chip b {
+        font-size: 8px
+    }
+
+    .float-chip small {
+        font-size: 7px
+    }
+
+    .chip-top {
+        right: -4px;
+        top: 2px
+    }
+
+    .chip-bottom {
+        left: -4px;
+        bottom: 0
+    }
+
+    .chip-icon {
+        width: 22px;
+        height: 22px
+    }
+
+    .trust-strip {
+        padding: 22px 18px;
+        align-items: flex-start;
+        flex-direction: column
+    }
+
+    .provider-list {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+        font-size: 11px
+    }
+
+    .provider-muted {
+        width: 100%
+    }
+
+    .problem,
+    .features,
+    .workflow {
+        padding-top: 80px;
+        padding-bottom: 80px
+    }
+
+    .section-grid h2,
+    .solution-inner h2,
+    .cta-card h2 {
+        font-size: 38px;
+        letter-spacing: -2px
+    }
+
+    .problem-cards {
+        grid-template-columns: 1fr;
+        margin-top: 35px
+    }
+
+    .info-card {
+        min-height: 190px
+    }
+
+    .line-icon {
+        margin: 8px 0 17px
+    }
+
+    .solution-band {
+        padding: 75px 0
+    }
+
+    .orbit {
+        right: -220px
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+        margin-top: 35px
+    }
+
+    .feature-large {
+        grid-column: auto
+    }
+
+    .feature-card {
+        min-height: 215px
+    }
+
+    .workflow-steps {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px 18px;
+        margin-top: 42px
+    }
+
+    .step-line {
+        margin: 13px 0 18px
+    }
+
+    .cta-card {
+        padding: 42px 24px
+    }
+
+    .cta-orb {
+        right: -230px
+    }
+
+    .footer {
+        padding: 25px 0;
+        flex-wrap: wrap
+    }
+
+    .footer>p {
+        order: 3;
+        width: 100%;
+        margin: 0
+    }
+
+    .footer>div {
+        gap: 12px;
+        font-size: 9px
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    html {
+        scroll-behavior: auto
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important
+    }
+}

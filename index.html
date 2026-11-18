@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EcoTrace helps developers understand AI workload usage, latency, token consumption and optimization opportunities.">
+  <meta name="theme-color" content="#090d0b">
+  <title>EcoTrace AI — Understand every AI workload</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="EcoTrace home">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span>eco<span class="brand-light">trace</span><small>AI</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#problem">Why EcoTrace</a>
+        <a href="#features">Capabilities</a>
+        <a href="#workflow">How it works</a>
+        <a href="#developers">Developers</a>
+      </nav>
+      <a class="nav-cta" href="https://github.com/josheworks/EcoTrace-AI" target="_blank" rel="noreferrer">View SDK <span>↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero section-wrap">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse"></span> AI WORKLOAD OBSERVABILITY</div>
+          <h1>Make every AI<br>request <span class="accent">count.</span></h1>
+          <p class="hero-lede">Understand what your AI workloads are doing. Find repeated requests, track token usage and latency, and uncover opportunities to run leaner.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/josheworks/EcoTrace-AI" target="_blank" rel="noreferrer">Explore the SDK <span>↗</span></a>
+            <a class="button button-quiet" href="#workflow">See how it works <span>↓</span></a>
+          </div>
+          <div class="hero-note"><span class="tiny-check">✓</span> Provider-agnostic by design <i></i> Built for developers</div>
+        </div>
+
+        <div class="hero-visual" aria-label="Illustrative AI workload dashboard preview">
+          <div class="visual-glow"></div>
+          <div class="dashboard-window">
+            <div class="window-top"><div class="window-dots"><b></b><b></b><b></b></div><span>ECOTRACE / OVERVIEW</span><span class="live-label"><i></i> LIVE VIEW</span></div>
+            <div class="dash-heading"><div><small>WORKLOAD OVERVIEW</small><h3>Good morning, developer.</h3></div><span class="period">Last 24 hours⌄</span></div>
+            <div class="metric-grid">
+              <div class="metric"><small>REQUESTS</small><strong>12,486</strong><em>↑ 8.2%</em></div>
+              <div class="metric"><small>TOKEN USAGE</small><strong>2.84M</strong><em>↑ 3.1%</em></div>
+              <div class="metric"><small>AVG. LATENCY</small><strong>428<span>ms</span></strong><em class="neutral">Across tracked calls</em></div>
+            </div>
+            <div class="chart-panel">
+              <div class="panel-head"><span>Request activity</span><small>ILLUSTRATIVE DATA</small></div>
+              <div class="chart">
+                <div class="chart-y"><span>4k</span><span>3k</span><span>2k</span><span>1k</span><span>0</span></div>
+                <svg viewBox="0 0 520 150" role="img" aria-label="Illustrative request activity line chart">
+                  <defs><linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#b8f77a" stop-opacity=".25"/><stop offset="1" stop-color="#b8f77a" stop-opacity="0"/></linearGradient></defs>
+                  <path d="M0 112 C28 105 38 80 65 88 S105 110 130 76 S172 66 195 82 S230 44 260 58 S300 75 325 40 S365 58 390 33 S430 54 455 22 S490 38 520 12 L520 150 L0 150Z" fill="url(#area)"/>
+                  <path d="M0 112 C28 105 38 80 65 88 S105 110 130 76 S172 66 195 82 S230 44 260 58 S300 75 325 40 S365 58 390 33 S430 54 455 22 S490 38 520 12" fill="none" stroke="#b8f77a" stroke-width="2.5"/>
+                </svg>
+              </div>
+              <div class="chart-x"><span>00:00</span><span>06:00</span><span>12:00</span><span>18:00</span><span>24:00</span></div>
+            </div>
+            <div class="dash-bottom"><span><i class="legend-dot"></i> Requests</span><span>Telemetry preview · Sample values</span></div>
+          </div>
+          <div class="float-chip chip-top"><span class="chip-icon">↗</span><span><b>Workload visibility</b><small>One view across your AI calls</small></span></div>
+          <div class="float-chip chip-bottom"><span class="chip-icon chip-lime">⌁</span><span><b>Optimization insights</b><small>Turn telemetry into action</small></span></div>
+        </div>
+        <div class="hero-scroll"><span></span> SCROLL TO EXPLORE</div>
+      </section>
+
+      <section class="trust-strip">
+        <span>BUILT FOR THE AI STACK</span>
+        <div class="provider-list"><b>OpenAI</b><b>Gemini</b><b>Groq</b><b class="provider-muted">+ extensible integrations</b></div>
+      </section>
+
+      <section class="problem section-wrap" id="problem">
+        <div class="section-kicker">01 / THE PROBLEM</div>
+        <div class="section-grid">
+          <div><h2>Your AI is working.<br><span class="muted">But is it working efficiently?</span></h2></div>
+          <div class="section-intro"><p>As AI features move into production, every request creates a trail of tokens, latency and cost. Without workload-level visibility, inefficiencies can stay hidden in the noise.</p></div>
+        </div>
+        <div class="problem-cards">
+          <article class="info-card"><span class="card-index">01</span><div class="line-icon">⟳</div><h3>Repeated requests</h3><p>Similar questions can trigger similar work again and again, consuming resources without adding much value.</p></article>
+          <article class="info-card"><span class="card-index">02</span><div class="line-icon">⌁</div><h3>Unclear usage</h3><p>Token consumption and latency are difficult to reason about when telemetry is scattered across providers.</p></article>
+          <article class="info-card"><span class="card-index">03</span><div class="line-icon">◈</div><h3>Hidden inefficiency</h3><p>Without a unified view, it is harder to spot expensive patterns and decide what to improve next.</p></article>
+        </div>
+      </section>
+
+      <section class="solution-band">
+        <div class="section-wrap solution-inner">
+          <div class="section-kicker">THE ECOTRACE APPROACH</div>
+          <h2>From scattered AI calls<br>to <span class="accent">actionable insight.</span></h2>
+          <p>EcoTrace is designed to give developers a clearer picture of AI workload behaviour — from request capture to analysis and optimization recommendations.</p>
+          <a class="text-link" href="#workflow">Explore the workflow <span>→</span></a>
+        </div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      </section>
+
+      <section class="features section-wrap" id="features">
+        <div class="section-kicker">02 / CAPABILITIES</div>
+        <div class="section-grid"><h2>Understand the<br><span class="muted">work behind every response.</span></h2><p class="section-intro">A practical observability foundation for tracking and understanding AI workloads.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card feature-large"><div class="feature-top"><span class="feature-symbol">⌘</span><span class="feature-tag">01 / CAPTURE</span></div><h3>Unified request telemetry</h3><p>Capture request and response metadata across supported AI providers through a consistent SDK interface.</p><div class="code-mini"><span>eco.track(</span><br>&nbsp;&nbsp;request, response<br><span>)</span><i>✓ event recorded</i></div></article>
+          <article class="feature-card"><div class="feature-top"><span class="feature-symbol">◷</span><span class="feature-tag">02 / ANALYZE</span></div><h3>Token & latency insights</h3><p>Explore token consumption and response-time patterns across your tracked workloads.</p><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+          <article class="feature-card"><div class="feature-top"><span class="feature-symbol">⟳</span><span class="feature-tag">03 / DETECT</span></div><h3>Repeated request detection</h3><p>Identify exact repeated requests and investigate recurring workload patterns.</p><div class="repeat-rows"><span>Summarize this report <b>× 4</b></span><span>Extract key points <b>× 3</b></span><span>Classify this ticket <b>× 2</b></span></div></article>
+          <article class="feature-card"><div class="feature-top"><span class="feature-symbol">↗</span><span class="feature-tag">04 / OPTIMIZE</span></div><h3>Actionable recommendations</h3><p>Surface opportunities such as caching and model right-sizing for developer review.</p><div class="recommendation"><span>INSIGHT</span><b>Review repeated workload patterns</b><small>Recommendation · Illustrative UI</small></div></article>
+          <article class="feature-card"><div class="feature-top"><span class="feature-symbol">◎</span><span class="feature-tag">05 / MEASURE</span></div><h3>Cost & impact estimates</h3><p>Bring estimated API cost and workload impact into the same operational picture.</p><div class="impact-number"><strong>$—</strong><small>Estimated cost depends on configured model pricing</small></div></article>
+        </div>
+        <p class="fine-print">Feature descriptions reflect the current product direction; availability depends on the SDK version and configured integrations.</p>
+      </section>
+
+      <section class="workflow section-wrap" id="workflow">
+        <div class="section-kicker">03 / HOW IT WORKS</div>
+        <div class="section-grid"><h2>Lightweight integration.<br><span class="muted">Clearer decisions.</span></h2><p class="section-intro">Connect telemetry to your existing AI application and use the resulting data to understand where to investigate.</p></div>
+        <div class="workflow-steps">
+          <article><span>01</span><div class="step-line"></div><h3>Instrument</h3><p>Add the EcoTrace SDK to the application paths you want to observe.</p></article>
+          <article><span>02</span><div class="step-line"></div><h3>Capture</h3><p>Record supported request, response and performance metadata.</p></article>
+          <article><span>03</span><div class="step-line"></div><h3>Analyze</h3><p>Review workload patterns, usage and optimization opportunities.</p></article>
+          <article><span>04</span><div class="step-line"></div><h3>Improve</h3><p>Evaluate recommendations and measure the effect of changes.</p></article>
+        </div>
+      </section>
+
+      <section class="developer-cta section-wrap" id="developers">
+        <div class="cta-card"><div class="cta-orb"></div><div class="section-kicker">BUILT FOR BUILDERS</div><h2>Bring visibility<br>to your AI stack.</h2><p>Explore the SDK, inspect the implementation and help shape a more efficient way to run AI workloads.</p><div class="hero-actions"><a class="button button-primary" href="https://github.com/josheworks/EcoTrace-AI" target="_blank" rel="noreferrer">Explore on GitHub ↗</a><a class="button button-quiet" href="https://github.com/josheworks/EcoTrace-AI#readme" target="_blank" rel="noreferrer">Read the README ↗</a></div></div>
+      </section>
+    </main>
+
+    <footer class="footer section-wrap"><a class="brand" href="#"><span class="brand-mark"><span></span><span></span><span></span></span><span>eco<span class="brand-light">trace</span><small>AI</small></span></a><p>Make every AI request count.</p><div><a href="https://github.com/josheworks/EcoTrace-AI" target="_blank" rel="noreferrer">GitHub ↗</a><span>© <span id="year"></span> EcoTrace AI</span></div></footer>
+  </div>
+</body>
+</html>
